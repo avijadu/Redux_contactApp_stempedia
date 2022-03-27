@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 const Home = () => {
     const contacts = useSelector(state => state);
     const dispatch = useDispatch();
+
     const deleteContact = (id) => {
         dispatch({
             type: "DELETE_CONTACT",
